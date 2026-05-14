@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"><link href="css/style.css" rel="stylesheet"></head><body><div id="preloader"><div class="pre-crest"><i class="fas fa-car-side"></i></div><div class="pre-brand">ZE<span>N</span>ITH</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div><title>Reserve a Chauffeur | ZENITH</title>
+<nav class="navbar-z">
+  <div class="container"><div class="nav-container">
+    <a href="index.html" class="nav-brand-z"><div class="crest"><i class="fas fa-gem"></i></div><div class="brand-name">ZE<span>N</span>ITH</div></a>
+    <div class="nav-links-z">
+      <a href="index.html" class="nav-link-z">Home</a><a href="about.html" class="nav-link-z">About</a>
+      <a href="services.html" class="nav-link-z">Services</a><a href="fleet.html" class="nav-link-z">Fleet</a>
+      <a href="tours.html" class="nav-link-z">Tours</a><a href="airport.html" class="nav-link-z">Airport</a>
+      <a href="blog.html" class="nav-link-z">Journal</a><a href="contact.html" class="nav-link-z">Contact</a>
+      <a href="booking.html" class="nav-btn-z ms-3">Reserve &rarr;</a>
+    </div>
+    <button class="nav-toggle-z"><span></span><span></span><span></span></button>
+  </div></div>
+  <div class="container"><nav class="mobile-nav-z">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="fleet.html">Fleet</a><a href="tours.html">Tours</a><a href="airport.html">Airport</a>
+    <a href="blog.html">Journal</a><a href="contact.html">Contact</a><a href="booking.html">Reserve &rarr;</a>
+  </nav></div>
+</nav>
+<section class="page-hero-z" style="padding-bottom:0">
+  <div style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&q=80') center/cover no-repeat;opacity:.08"></div>
+  <div class="container position-relative" style="z-index:2;padding:160px 0 80px">
+    <div class="breadcrumb-z"><a href="index.html">Home</a><span class="sep">/</span><span class="cur">Reserve</span></div>
+    <div class="eyebrow">Reservation</div>
+    <h1 class="section-title" style="font-size:clamp(2.8rem,7vw,5rem)">Reserve Your<br><span class="accent">Chauffeur</span></h1>
+    <p style="color:var(--muted);max-width:440px;margin-top:14px">Complete the form below and your reservation will be confirmed within 15 minutes.</p>
+  </div>
+</section>
+
+<section style="background:var(--navy2);margin-top:-40px">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+
+      <div class="col-lg-8">
+        <div style="background:var(--navy);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:44px;position:relative">
+          <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-gold);border-radius:var(--radius-lg) var(--radius-lg) 0 0"></div>
+
+          <div id="bookingSuccess" style="display:none">
+            <div style="text-align:center;padding:48px 24px;border:1px solid var(--card-border);border-radius:var(--radius-lg);background:var(--navy2)">
+              <div style="width:72px;height:72px;background:var(--grad-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-serif);font-size:1.8rem;color:var(--navy)">&#10003;</div>
+              <h3 style="font-family:var(--font-serif);font-size:2rem;color:var(--white);margin-bottom:12px">Reservation Confirmed.</h3>
+              <p style="color:var(--muted);max-width:380px;margin:0 auto 24px">Your reservation has been received. Our concierge team will contact you within 15 minutes to confirm all details.</p>
+              <div style="background:var(--navy3);border:1px solid var(--card-border);border-radius:var(--radius);display:inline-block;padding:16px 32px;margin-bottom:24px">
+                <div style="font-family:var(--font-head);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted2);margin-bottom:6px">Reservation Reference</div>
+                <div style="font-family:var(--font-serif);font-size:1.8rem;font-weight:600;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text" id="bookingRef">ZNT-2025-0000</div>
+              </div><br>
+              <a href="index.html" class="btn-gold"><i class="fas fa-home"></i> Return Home</a>
+            </div>
+          </div>
+
+          <form id="bookingForm" novalidate>
+            <h2 style="font-family:var(--font-serif);font-size:1.8rem;color:var(--white);margin-bottom:4px"><i class="fas fa-concierge-bell" style="color:var(--gold);font-size:1.2rem"></i> Chauffeur Reservation</h2>
+            <p style="color:var(--muted2);font-size:.85rem;margin-bottom:36px">Fields marked <span style="color:#E55353">*</span> are required.</p>
+
+            <!-- Step 1 -->
+            <div style="border:1px solid var(--card-border);border-radius:var(--radius);padding:24px;margin-bottom:24px;background:var(--navy2)">
+              <h5 style="font-family:var(--font-serif);font-size:1.1rem;color:var(--white);margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;background:var(--grad-gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--navy);font-family:var(--font-head);font-weight:700">1</span> Journey Details</h5>
+              <div class="row g-3">
+                <div class="col-12"><label class="label-z">Pickup Location <span style="color:#E55353">*</span></label><div style="position:relative"><input type="text" name="pickup" class="input-z" placeholder="Enter full pickup address" style="padding-left:42px" required><i class="fas fa-map-marker-alt" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:.85rem"></i></div><div class="err-msg-z">Pickup location is required.</div></div>
+                <div class="col-12"><label class="label-z">Destination <span style="color:#E55353">*</span></label><div style="position:relative"><input type="text" name="dropoff" class="input-z" placeholder="Enter destination address" style="padding-left:42px" required><i class="fas fa-map-pin" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted2);font-size:.85rem"></i></div><div class="err-msg-z">Destination is required.</div></div>
+                <div class="col-sm-6"><label class="label-z">Date <span style="color:#E55353">*</span></label><input type="date" name="date" class="input-z" required><div class="err-msg-z">Please select a valid future date.</div></div>
+                <div class="col-sm-6"><label class="label-z">Time <span style="color:#E55353">*</span></label><input type="time" name="time" class="input-z" required><div class="err-msg-z">Please select a time.</div></div>
+                <div class="col-sm-6"><label class="label-z">Journey Type</label><select name="triptype" class="input-z"><option>One Way Transfer</option><option>Return Journey</option><option>Hourly Hire</option><option>Airport Transfer</option></select></div>
+                <div class="col-sm-6"><label class="label-z">Passengers</label><select name="passengers" class="input-z"><option>1 Passenger</option><option>2 Passengers</option><option>3 Passengers</option><option>4 Passengers</option><option>5 Passengers</option><option>6+ Passengers</option></select></div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div style="border:1px solid var(--card-border);border-radius:var(--radius);padding:24px;margin-bottom:24px;background:var(--navy2)">
+              <h5 style="font-family:var(--font-serif);font-size:1.1rem;color:var(--white);margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;background:var(--grad-gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--navy);font-family:var(--font-head);font-weight:700">2</span> Select Vehicle Class <span style="color:#E55353">*</span></h5>
+              <div class="row g-3">
+                <div class="col-6 col-sm-3"><label class="v-card-z"><input type="radio" name="vehicle" value="compact"><i class="fas fa-car-side"></i><span>Compact</span><span class="v-rate-z">&#8377;8/km</span></label></div>
+                <div class="col-6 col-sm-3"><label class="v-card-z"><input type="radio" name="vehicle" value="business"><i class="fas fa-car"></i><span>Business</span><span class="v-rate-z">&#8377;12/km</span></label></div>
+                <div class="col-6 col-sm-3"><label class="v-card-z"><input type="radio" name="vehicle" value="executive"><i class="fas fa-van-shuttle"></i><span>Executive</span><span class="v-rate-z">&#8377;18/km</span></label></div>
+                <div class="col-6 col-sm-3"><label class="v-card-z"><input type="radio" name="vehicle" value="prestige"><i class="fas fa-gem"></i><span>Prestige</span><span class="v-rate-z">&#8377;35/km</span></label></div>
+              </div>
+              <div id="vehicleError" style="display:none;font-family:var(--font-head);font-size:.65rem;color:#E55353;margin-top:10px"><i class="fas fa-exclamation-circle"></i> Please select a vehicle class.</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div style="border:1px solid var(--card-border);border-radius:var(--radius);padding:24px;margin-bottom:24px;background:var(--navy2)">
+              <h5 style="font-family:var(--font-serif);font-size:1.1rem;color:var(--white);margin-bottom:20px;display:flex;align-items:center;gap:10px"><span style="width:26px;height:26px;background:var(--grad-gold);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--navy);font-family:var(--font-head);font-weight:700">3</span> Your Details</h5>
+              <div class="row g-3">
+                <div class="col-sm-6"><label class="label-z">Full Name <span style="color:#E55353">*</span></label><input type="text" name="name" class="input-z" placeholder="Your full name" required><div class="err-msg-z">Your name is required.</div></div>
+                <div class="col-sm-6"><label class="label-z">Phone Number <span style="color:#E55353">*</span></label><input type="tel" name="phone" class="input-z" placeholder="+91 98765 43210" required><div class="err-msg-z">A valid phone number is required.</div></div>
+                <div class="col-12"><label class="label-z">Email Address <span style="color:#E55353">*</span></label><input type="email" name="email" class="input-z" placeholder="your@email.com" required><div class="err-msg-z">A valid email address is required.</div></div>
+                <div class="col-12"><label class="label-z">Special Requirements or Notes</label><textarea name="notes" class="input-z" rows="3" placeholder="Any special requirements, flight number (for airport collections), preferred route etc." style="height:auto;resize:vertical"></textarea></div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:24px">
+              <input type="checkbox" id="termsCheck" style="margin-top:3px;accent-color:var(--gold);width:16px;height:16px">
+              <label for="termsCheck" style="font-size:.875rem;color:var(--muted)">I agree to ZENITH's <a href="#" style="color:var(--gold)">Terms of Service</a> and <a href="#" style="color:var(--gold)">Privacy Policy</a>.</label>
+            </div>
+            <div id="termsErr" style="display:none;font-family:var(--font-head);font-size:.65rem;color:#E55353;margin-bottom:14px"><i class="fas fa-exclamation-circle"></i> You must accept the terms to proceed.</div>
+
+            <button type="submit" class="btn-gold" style="width:100%;justify-content:center;font-size:.9rem;padding:16px"><i class="fas fa-car"></i> Confirm Reservation</button>
+            <p style="text-align:center;font-size:.75rem;color:var(--muted2);margin-top:14px;font-family:var(--font-head);letter-spacing:.06em"><i class="fas fa-lock" style="color:var(--gold)"></i> &nbsp;Your information is encrypted and handled with complete discretion.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="glass-card p-4 mb-4">
+          <div class="eyebrow mb-3">Why Reserve Online?</div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;gap:12px;align-items:flex-start"><i class="fas fa-gem" style="color:var(--gold);margin-top:3px;font-size:.75rem"></i><div><div style="color:var(--white);font-size:.9rem;font-weight:600;margin-bottom:2px">Price Guarantee</div><div style="color:var(--muted2);font-size:.8rem">Online reservations lock in your quoted fare</div></div></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><i class="fas fa-gem" style="color:var(--gold);margin-top:3px;font-size:.75rem"></i><div><div style="color:var(--white);font-size:.9rem;font-weight:600;margin-bottom:2px">15-Minute Confirmation</div><div style="color:var(--muted2);font-size:.8rem">Our concierge confirms within the quarter-hour</div></div></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><i class="fas fa-gem" style="color:var(--gold);margin-top:3px;font-size:.75rem"></i><div><div style="color:var(--white);font-size:.9rem;font-weight:600;margin-bottom:2px">Free Cancellation</div><div style="color:var(--muted2);font-size:.8rem">Cancel up to 2 hours before collection</div></div></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><i class="fas fa-gem" style="color:var(--gold);margin-top:3px;font-size:.75rem"></i><div><div style="color:var(--white);font-size:.9rem;font-weight:600;margin-bottom:2px">Pay on Arrival</div><div style="color:var(--muted2);font-size:.8rem">Cash, UPI or card — after your journey</div></div></div>
+          </div>
+        </div>
+
+        <div style="background:var(--grad-gold);border-radius:var(--radius-lg);padding:28px;text-align:center;margin-bottom:24px">
+          <i class="fas fa-phone" style="font-size:1.8rem;color:var(--navy);margin-bottom:12px;display:block"></i>
+          <h5 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:6px">Prefer the Concierge Line?</h5>
+          <p style="color:rgba(4,13,30,.65);font-size:.875rem;margin-bottom:16px">Our team completes your reservation in under two minutes.</p>
+          <a href="tel:+919876543210" class="btn-outline-z" style="border-color:var(--navy);color:var(--navy);width:100%;justify-content:center">+91 98765 43210</a>
+        </div>
+
+        <div style="background:var(--navy);border:1px solid var(--card-border);border-radius:var(--radius-lg);padding:24px">
+          <div class="eyebrow mb-3">Rate Guide</div>
+          <table style="width:100%;font-size:.9rem">
+            <tr style="border-bottom:1px solid var(--card-border)"><td style="padding:10px 0;color:var(--white)"><i class="fas fa-car-side" style="color:var(--gold);margin-right:8px"></i>Compact</td><td style="padding:10px 0;text-align:right;font-family:var(--font-serif);font-size:1.1rem;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&#8377;8/km</td></tr>
+            <tr style="border-bottom:1px solid var(--card-border)"><td style="padding:10px 0;color:var(--white)"><i class="fas fa-car" style="color:var(--gold);margin-right:8px"></i>Business</td><td style="padding:10px 0;text-align:right;font-family:var(--font-serif);font-size:1.1rem;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&#8377;12/km</td></tr>
+            <tr style="border-bottom:1px solid var(--card-border)"><td style="padding:10px 0;color:var(--white)"><i class="fas fa-van-shuttle" style="color:var(--gold);margin-right:8px"></i>Executive</td><td style="padding:10px 0;text-align:right;font-family:var(--font-serif);font-size:1.1rem;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&#8377;18/km</td></tr>
+            <tr><td style="padding:10px 0;color:var(--white)"><i class="fas fa-gem" style="color:var(--gold);margin-right:8px"></i>Prestige</td><td style="padding:10px 0;text-align:right;font-family:var(--font-serif);font-size:1.1rem;background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&#8377;35/km</td></tr>
+          </table>
+          <div style="background:var(--gold-dim);border:1px solid var(--card-border);border-radius:8px;padding:10px;margin-top:14px;font-family:var(--font-head);font-size:.6rem;color:var(--muted2);letter-spacing:.06em"><i class="fas fa-info-circle" style="color:var(--gold)"></i> Night journeys (10 PM – 6 AM) carry a 15% supplement, disclosed at reservation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="background:var(--navy);border-top:1px solid var(--card-border);padding:48px 0">
+  <div class="container"><div class="row g-4 text-center">
+    <div class="col-6 col-md-3"><i class="fas fa-shield-halved" style="font-size:1.8rem;color:var(--gold);margin-bottom:10px;display:block"></i><h6 style="color:var(--white);font-size:.9rem;margin-bottom:4px">Verified Chauffeurs</h6><p style="font-size:.78rem;color:var(--muted2)">Background-checked &amp; licensed</p></div>
+    <div class="col-6 col-md-3"><i class="fas fa-lock" style="font-size:1.8rem;color:var(--gold);margin-bottom:10px;display:block"></i><h6 style="color:var(--white);font-size:.9rem;margin-bottom:4px">Secure Transaction</h6><p style="font-size:.78rem;color:var(--muted2)">Encrypted data, always</p></div>
+    <div class="col-6 col-md-3"><i class="fas fa-clock" style="font-size:1.8rem;color:var(--gold);margin-bottom:10px;display:block"></i><h6 style="color:var(--white);font-size:.9rem;margin-bottom:4px">Always Punctual</h6><p style="font-size:.78rem;color:var(--muted2)">98.4% on-time arrival</p></div>
+    <div class="col-6 col-md-3"><i class="fas fa-headset" style="font-size:1.8rem;color:var(--gold);margin-bottom:10px;display:block"></i><h6 style="color:var(--white);font-size:.9rem;margin-bottom:4px">24/7 Concierge</h6><p style="font-size:.78rem;color:var(--muted2)">Real humans, always</p></div>
+  </div></div>
+</div>
+
+<footer class="footer-z"><div class="container"><div class="row g-5">
+  <div class="col-lg-4 col-md-6"><a href="index.html" class="footer-brand-z">ZE<span>N</span>ITH</a><p class="footer-desc-z">Luxury chauffeur and premium cab service. Elegance, punctuality and absolute discretion in every journey.</p><div class="footer-socials-z"><a href="#" class="footer-soc-z"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer-soc-z"><i class="fab fa-instagram"></i></a><a href="#" class="footer-soc-z"><i class="fab fa-twitter"></i></a><a href="#" class="footer-soc-z"><i class="fab fa-whatsapp"></i></a></div></div>
+  <div class="col-lg-2 col-6"><span class="footer-heading-z">Navigation</span><ul class="footer-links-z"><li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li><li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li><li><a href="fleet.html"><i class="fas fa-chevron-right"></i> Fleet</a></li><li><a href="booking.html"><i class="fas fa-chevron-right"></i> Reserve</a></li></ul></div>
+  <div class="col-lg-2 col-6"><span class="footer-heading-z">Services</span><ul class="footer-links-z"><li><a href="services.html"><i class="fas fa-chevron-right"></i> City Transfers</a></li><li><a href="airport.html"><i class="fas fa-chevron-right"></i> Airport</a></li><li><a href="services.html"><i class="fas fa-chevron-right"></i> Outstation</a></li><li><a href="tours.html"><i class="fas fa-chevron-right"></i> Tours</a></li></ul></div>
+  <div class="col-lg-4 col-md-6"><span class="footer-heading-z">Contact</span><div class="footer-contact-z"><i class="fas fa-map-marker-alt"></i><span>12 Panchvati Society, Ahmedabad 380015</span></div><div class="footer-contact-z"><i class="fas fa-phone"></i><span><a href="tel:+919876543210">+91 98765 43210</a></span></div><div class="footer-contact-z"><i class="fas fa-envelope"></i><span>reservations@zenith.in</span></div></div>
+</div></div>
+<div class="footer-bottom-z"><div class="container"><p>&copy; 2025 <a href="index.html">ZENITH</a>. All Rights Reserved.</p></div></div>
+</footer>
+<button id="btt-z" aria-label="Top"><i class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script></body></html>

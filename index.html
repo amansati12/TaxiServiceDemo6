@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="ZENITH — Luxury chauffeur and premium cab service. Elegance in every journey.">
+  <title>ZENITH — Luxury Chauffeur Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="preloader">
+  <div class="pre-crest"><i class="fas fa-car-side"></i></div>
+  <div class="pre-brand">ZE<span>N</span>ITH</div>
+  <div class="pre-bar"><div class="pre-bar-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<nav class="navbar-z">
+  <div class="container"><div class="nav-container">
+    <a href="index.html" class="nav-brand-z">
+      <div class="crest"><i class="fas fa-gem"></i></div>
+      <div class="brand-name">ZE<span>N</span>ITH</div>
+    </a>
+    <div class="nav-links-z">
+      <a href="index.html" class="nav-link-z active">Home</a>
+      <a href="about.html" class="nav-link-z">About</a>
+      <a href="services.html" class="nav-link-z">Services</a>
+      <a href="fleet.html" class="nav-link-z">Fleet</a>
+      <a href="tours.html" class="nav-link-z">Tours</a>
+      <a href="airport.html" class="nav-link-z">Airport</a>
+      <a href="blog.html" class="nav-link-z">Journal</a>
+      <a href="contact.html" class="nav-link-z">Contact</a>
+      <a href="booking.html" class="nav-btn-z ms-3">Reserve &rarr;</a>
+    </div>
+    <button class="nav-toggle-z" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div></div>
+  <div class="container"><nav class="mobile-nav-z">
+    <a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    <a href="fleet.html">Fleet</a><a href="tours.html">Tours</a><a href="airport.html">Airport</a>
+    <a href="blog.html">Journal</a><a href="contact.html">Contact</a><a href="booking.html">Reserve a Car &rarr;</a>
+  </nav></div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-z">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="stars-wrap"></div>
+  <div class="diagonal-lines"></div>
+  <div class="container hero-content-z">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="hero-badge-z"><i class="fas fa-star fa-xs"></i> Premier Chauffeur Service — Est. 2016</div>
+        <h1 class="hero-title-z">
+          ARRIVE IN
+          <span class="gold-line">ABSOLUTE</span>
+          <span class="outline-line">LUXURY</span>
+        </h1>
+        <div class="hero-divider"></div>
+        <p class="hero-desc-z">Experience travel as it should be — punctual, impeccably presented, and utterly effortless. Your personal chauffeur awaits.</p>
+        <div class="hero-actions-z">
+          <a href="booking.html" class="btn-gold"><i class="fas fa-car"></i> Reserve Your Car</a>
+          <a href="fleet.html" class="btn-outline-z">View Our Fleet <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats-z">
+          <div class="h-stat"><div class="h-stat-num"><span data-count="15000">0</span>+</div><div class="h-stat-lbl">Journeys</div></div>
+          <div class="h-stat"><div class="h-stat-num"><span data-count="250">0</span></div><div class="h-stat-lbl">Vehicles</div></div>
+          <div class="h-stat"><div class="h-stat-num"><span data-count="50">0</span>+</div><div class="h-stat-lbl">Cities</div></div>
+          <div class="h-stat"><div class="h-stat-num">4.<span data-count="9">0</span></div><div class="h-stat-lbl">Rating</div></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-booking-z">
+          <div class="booking-title-z"><i class="fas fa-concierge-bell"></i> Reserve a Chauffeur</div>
+          <form action="booking.html">
+            <div class="mb-3">
+              <label class="label-z">Pickup Location</label>
+              <input type="text" name="pickup" class="input-z" placeholder="Enter pickup address">
+            </div>
+            <div class="mb-3">
+              <label class="label-z">Destination</label>
+              <input type="text" name="dropoff" class="input-z" placeholder="Enter destination">
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-6">
+                <label class="label-z">Date</label>
+                <input type="date" name="date" class="input-z">
+              </div>
+              <div class="col-6">
+                <label class="label-z">Time</label>
+                <input type="time" name="time" class="input-z">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="label-z">Vehicle Class</label>
+              <select name="vehicle" class="input-z">
+                <option value="">Select class</option>
+                <option>Business Sedan</option>
+                <option>Executive SUV</option>
+                <option>Luxury Limousine</option>
+                <option>Premium MPV</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-gold w-100" style="justify-content:center"><i class="fas fa-search"></i> Check Availability</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-7">
+        <div class="eyebrow">Our Services</div>
+        <h2 class="section-title">Bespoke Travel<br>for Every <span class="accent">Occasion</span></h2>
+      </div>
+      <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+        <a href="services.html" class="btn-outline-z">All Services <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3 reveal-z">
+        <div class="service-card-z">
+          <div class="svc-icon-z"><i class="fas fa-city"></i></div>
+          <h4>City Transfers</h4>
+          <p>Seamless point-to-point rides within the city. Professional chauffeurs, immaculate vehicles.</p>
+          <a href="services.html" class="svc-link-z">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-z d1">
+        <div class="service-card-z">
+          <div class="svc-icon-z"><i class="fas fa-road"></i></div>
+          <h4>Outstation</h4>
+          <p>Intercity travel with all-inclusive pricing. Tolls, fuel and driver stay — covered.</p>
+          <a href="services.html" class="svc-link-z">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-z d2">
+        <div class="service-card-z">
+          <div class="svc-icon-z"><i class="fas fa-plane-arrival"></i></div>
+          <h4>Airport Transfer</h4>
+          <p>Flight-tracked pickups with meet &amp; greet. Never wait at arrivals again.</p>
+          <a href="airport.html" class="svc-link-z">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 reveal-z d3">
+        <div class="service-card-z">
+          <div class="svc-icon-z"><i class="fas fa-briefcase"></i></div>
+          <h4>Corporate</h4>
+          <p>Managed accounts, monthly billing and dedicated fleet for businesses of distinction.</p>
+          <a href="services.html" class="svc-link-z">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-z">
+  <div class="container-fluid px-0">
+    <div class="stats-inner-z">
+      <div class="stat-block-z"><div class="stat-num-z" data-count="15000">0</div><div class="stat-lbl-z">Satisfied Clients</div></div>
+      <div class="stat-block-z"><div class="stat-num-z" data-count="250">0</div><div class="stat-lbl-z">Fleet Vehicles</div></div>
+      <div class="stat-block-z"><div class="stat-num-z" data-count="8">0</div><div class="stat-lbl-z">Years of Excellence</div></div>
+      <div class="stat-block-z"><div class="stat-num-z" data-count="50">0</div><div class="stat-lbl-z">Cities Served</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<section class="section-dark">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal-left-z">
+        <div class="eyebrow">The ZENITH Standard</div>
+        <h2 class="section-title">Where Every<br>Detail <span class="accent">Matters.</span></h2>
+        <div class="gold-rule"></div>
+        <p style="color:var(--muted);line-height:1.85;margin:20px 0 32px">We don't simply transport you. We craft an experience that begins the moment you make your reservation and ends when you step through your destination door.</p>
+        <a href="about.html" class="btn-ghost">Discover Our Story <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-sm-6 reveal-z">
+            <div class="glass-card p-4">
+              <div style="width:48px;height:48px;background:var(--gold-dim);border:1px solid var(--card-border);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><i class="fas fa-shield-halved" style="color:var(--gold)"></i></div>
+              <h5 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--white);margin-bottom:8px">Verified Chauffeurs</h5>
+              <p style="font-size:.85rem;color:var(--muted);line-height:1.7">Background-checked, licensed and trained to the highest professional standards.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal-z d1">
+            <div class="glass-card p-4">
+              <div style="width:48px;height:48px;background:var(--gold-dim);border:1px solid var(--card-border);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><i class="fas fa-lock" style="color:var(--gold)"></i></div>
+              <h5 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--white);margin-bottom:8px">Price Guarantee</h5>
+              <p style="font-size:.85rem;color:var(--muted);line-height:1.7">The fare quoted at reservation is the final fare. Zero hidden charges, zero surge pricing.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal-z d2">
+            <div class="glass-card p-4">
+              <div style="width:48px;height:48px;background:var(--gold-dim);border:1px solid var(--card-border);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><i class="fas fa-clock" style="color:var(--gold)"></i></div>
+              <h5 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--white);margin-bottom:8px">Always On Time</h5>
+              <p style="font-size:.85rem;color:var(--muted);line-height:1.7">Our 98.4% on-time rate isn't a statistic — it's a commitment we keep every single day.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal-z d3">
+            <div class="glass-card p-4">
+              <div style="width:48px;height:48px;background:var(--gold-dim);border:1px solid var(--card-border);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px"><i class="fas fa-headset" style="color:var(--gold)"></i></div>
+              <h5 style="font-family:var(--font-serif);font-size:1.15rem;color:var(--white);margin-bottom:8px">Concierge Support</h5>
+              <p style="font-size:.85rem;color:var(--muted);line-height:1.7">24/7 dedicated concierge line. A real person answers — always, without exception.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET PREVIEW -->
+<section>
+  <div class="container">
+    <div class="row align-items-end mb-5">
+      <div class="col-lg-7">
+        <div class="eyebrow">Our Fleet</div>
+        <h2 class="section-title">Vehicles Worthy of<br>Your <span class="accent">Journey</span></h2>
+      </div>
+      <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+        <a href="fleet.html" class="btn-outline-z">Full Fleet <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal-z">
+        <div class="fleet-card-z">
+          <div class="fleet-img-wrap-z">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=700&q=80" alt="Business Sedan" class="fleet-img-z">
+            <div class="fleet-badge-z">Business</div>
+          </div>
+          <div class="fleet-body-z">
+            <h4>Business Sedan</h4>
+            <p style="font-size:.85rem;color:var(--muted);margin-bottom:0">Honda City / Swift Dzire. Refined comfort for the discerning daily commuter.</p>
+            <div class="fleet-specs-z">
+              <div class="fleet-spec-z"><i class="fas fa-user-group"></i> 4 Seats</div>
+              <div class="fleet-spec-z"><i class="fas fa-snowflake"></i> Climate</div>
+              <div class="fleet-spec-z"><i class="fas fa-wifi"></i> Wi-Fi</div>
+            </div>
+          </div>
+          <div class="fleet-foot-z">
+            <div class="fleet-price-z">&#8377;12<small>/km</small></div>
+            <a href="booking.html" class="btn-gold" style="padding:9px 18px;font-size:.72rem">Reserve</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-z d1">
+        <div class="fleet-card-z" style="border-color:var(--gold3)">
+          <div class="fleet-img-wrap-z">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=700&q=80" alt="Executive SUV" class="fleet-img-z">
+            <div class="fleet-badge-z">Executive</div>
+          </div>
+          <div class="fleet-body-z">
+            <h4>Executive SUV</h4>
+            <p style="font-size:.85rem;color:var(--muted);margin-bottom:0">Toyota Innova / Kia Carens. Spacious elegance for families and corporate groups.</p>
+            <div class="fleet-specs-z">
+              <div class="fleet-spec-z"><i class="fas fa-user-group"></i> 6–7 Seats</div>
+              <div class="fleet-spec-z"><i class="fas fa-snowflake"></i> Climate</div>
+              <div class="fleet-spec-z"><i class="fas fa-suitcase"></i> Luggage</div>
+            </div>
+          </div>
+          <div class="fleet-foot-z">
+            <div class="fleet-price-z">&#8377;18<small>/km</small></div>
+            <a href="booking.html" class="btn-gold" style="padding:9px 18px;font-size:.72rem">Reserve</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-z d2">
+        <div class="fleet-card-z">
+          <div class="fleet-img-wrap-z">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=700&q=80" alt="Luxury" class="fleet-img-z">
+            <div class="fleet-badge-z">Prestige</div>
+          </div>
+          <div class="fleet-body-z">
+            <h4>Prestige Limousine</h4>
+            <p style="font-size:.85rem;color:var(--muted);margin-bottom:0">Mercedes / BMW class. The pinnacle of automotive luxury with personal chauffeur.</p>
+            <div class="fleet-specs-z">
+              <div class="fleet-spec-z"><i class="fas fa-star"></i> Premium</div>
+              <div class="fleet-spec-z"><i class="fas fa-wine-glass"></i> Amenities</div>
+              <div class="fleet-spec-z"><i class="fas fa-eye-slash"></i> Privacy</div>
+            </div>
+          </div>
+          <div class="fleet-foot-z">
+            <div class="fleet-price-z">&#8377;35<small>/km</small></div>
+            <a href="booking.html" class="btn-gold" style="padding:9px 18px;font-size:.72rem">Reserve</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow" style="justify-content:center">Client Testimonials</div>
+      <h2 class="section-title">Words from Those<br>Who <span class="accent">Travelled With Us</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal-z">
+        <div class="testi-z">
+          <div class="star-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text-z">"The Zenith experience is unlike any taxi service I've used. The Mercedes was immaculate, the chauffeur anticipated every need, and the fare was exactly as quoted. Pure class."</p>
+          <div class="testi-author-z">
+            <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Rohan" class="testi-avatar-z">
+            <div><span class="testi-name-z">Rohan Desai</span><span class="testi-role-z">Managing Director</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-z d1">
+        <div class="testi-z" style="border-color:var(--gold3)">
+          <div class="star-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text-z">"We used Zenith for our entire Rajasthan tour. The driver-guide was extraordinary — knowledgeable, discreet and always punctual. Our entire family was thoroughly impressed."</p>
+          <div class="testi-author-z">
+            <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Nisha" class="testi-avatar-z">
+            <div><span class="testi-name-z">Nisha Kapoor</span><span class="testi-role-z">Entrepreneur</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-z d2">
+        <div class="testi-z">
+          <div class="star-row">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testi-text-z">"Our corporate account with Zenith has streamlined all executive travel. The monthly billing, the analytics and the consistency of service is exactly what a premium business needs."</p>
+          <div class="testi-author-z">
+            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Priya" class="testi-avatar-z">
+            <div><span class="testi-name-z">Priya Mehta</span><span class="testi-role-z">CFO, TechCorp</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section-z">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <div class="eyebrow">Reserve Today</div>
+        <h2 class="section-title" style="font-size:clamp(2rem,5vw,3.5rem)">Your Chauffeur<br>Awaits Your <span class="accent">Command.</span></h2>
+        <p style="color:var(--muted);margin-top:16px">Impeccable service, transparent pricing and the assurance of punctual arrival — every journey, without exception.</p>
+      </div>
+      <div class="col-lg-5 d-flex gap-3 justify-content-lg-end flex-wrap">
+        <a href="booking.html" class="btn-gold"><i class="fas fa-car"></i> Reserve Now</a>
+        <a href="tel:+919876543210" class="btn-outline-z"><i class="fas fa-phone"></i> Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-z">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6">
+        <a href="index.html" class="footer-brand-z">ZE<span>N</span>ITH</a>
+        <p class="footer-desc-z">Luxury chauffeur and premium cab service. Elegance, punctuality and absolute discretion — in every journey we undertake.</p>
+        <div class="footer-socials-z">
+          <a href="#" class="footer-soc-z"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-soc-z"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-soc-z"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footer-soc-z"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="footer-soc-z"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <span class="footer-heading-z">Navigation</span>
+        <ul class="footer-links-z">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Zenith</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+          <li><a href="fleet.html"><i class="fas fa-chevron-right"></i> Our Fleet</a></li>
+          <li><a href="tours.html"><i class="fas fa-chevron-right"></i> Tour Packages</a></li>
+          <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Reserve a Car</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <span class="footer-heading-z">Services</span>
+        <ul class="footer-links-z">
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> City Transfers</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Outstation Rides</a></li>
+          <li><a href="airport.html"><i class="fas fa-chevron-right"></i> Airport Transfer</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Corporate Travel</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Hourly Hire</a></li>
+          <li><a href="tours.html"><i class="fas fa-chevron-right"></i> Curated Tours</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <span class="footer-heading-z">Contact</span>
+        <div class="footer-contact-z"><i class="fas fa-map-marker-alt"></i><span>12, Panchvati Society, Satellite Road,<br>Ahmedabad, Gujarat – 380015</span></div>
+        <div class="footer-contact-z"><i class="fas fa-phone"></i><span><a href="tel:+919876543210">+91 98765 43210</a></span></div>
+        <div class="footer-contact-z"><i class="fas fa-envelope"></i><span><a href="mailto:reservations@zenith.in">reservations@zenith.in</a></span></div>
+        <div class="footer-contact-z"><i class="fas fa-clock"></i><span>Available 24 Hours — 7 Days a Week</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-z">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <p>&copy; 2025 <a href="index.html">ZENITH</a>. All Rights Reserved.</p>
+      <div class="d-flex gap-4">
+        <a href="#" style="color:var(--muted2);font-size:.78rem;text-decoration:none">Privacy Policy</a>
+        <a href="#" style="color:var(--muted2);font-size:.78rem;text-decoration:none">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button id="btt-z" aria-label="Top"><i class="fas fa-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body></html>
